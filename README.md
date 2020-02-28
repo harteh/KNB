@@ -1,2 +1,2 @@
 # KNB
-ballet school home
+KOREAN NATIONAL BALLET SCHOOL
