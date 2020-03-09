@@ -1,14 +1,105 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>KNB 전체 시안</title>
-    <style>
-        body{ margin: 0; padding: 0;}
-        img{ width: 100%;}
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOREAN NATIONAL BALLET SCHOOL</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/flexStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img src="images/draft-knb.png" alt="시안">
+    <header>
+        <div class="header-wrap">
+            <div class="menu">
+                <div id="btn">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <p>MENU</p>
+            </div>
+            <div class="logo">K.N.B.</div>
+            <div class="contact">balletschool@gmail.com</div>
+        </div>
+    </header>
+    <aside>
+        <span></span>
+        <span>scroll down</span>
+    </aside>
+    <section id="main">
+        <div class="text-wrap">
+            <p>practice makes perfect</p>
+            <h1>BALLET</h1>
+            <p class="pinyon">school</p>
+        </div>
+    </section>
+    <section id="school">
+        <div class="school-wrap">
+            <div class="pic-one">
+                <div class="top">
+                    <img src="images/02-school01.jpg" alt="스쿨사진1">
+                </div>
+                <div class="bottom">
+                    <img src="images/02-school02.jpg" alt="스쿨사진2">
+                </div>
+            </div>
+            <div class="text">
+                <h3>국내 최초 발레단 산하 아카데미</h3>
+                <p>1993년 한국 발레 30년 숙원이던 발레단 부설 교육기관인 '문화학교(현 국립발레단 부설 발레아카데미)가 국내 최초로 국립극장 내 개설되었습니다.</p>
+                <p>이는 국립발레단 초대 단장으로서 재임한 故 임성남 전 단장이 열망하던 '국립발레학교'의 중요한 첫걸음이었습니다. 당시 불모지이던 국내 발레 교육에 해외 유학이 아닌 자체적으로 조기교육이 가능하도록 이끈 셈이었는데 이로써 발레단은 한국 발레의 앞날을 이끌어갈 꿈나무를 키워내는 일을 본격적으로 시작하게 되었습니다.</p>
+            </div>
+            <div class="pic-two">
+                <img src="images/02-school03-1.jpg" alt="스쿨사진3">
+            </div>        
+        </div>
+    </section>
+    <section id="course">
+        <div class="course-wrap">
+            <div class="course-text-wrap">
+                <!-- 왼쪽 코스설명 텍스트 영역 -->
+                <h3 class="title">courses</h3>
+                <div class="course-text-box">
+                    <p class="title">국내 최초의 성인취미반</p>
+                    <p>2000년도, 국립발레단 부설 발레아카데미가 국내 최초로 <span class="hide">발레전공자가 아닌 아마추어를 위한</span> 성인취미반 발레교실을 열었습니다.
+                    <br><span class="hide">성인취미반은 수강생들의 자세 및 체형교정의 효과도 얻는 프로그램으로 자리잡고 있습니다.</span></p>
+                </div>
+            </div>
+            <div class="course-pic-wrap">
+                <!-- 오른쪽 코스설명 사진 영역 -->
+                <div class="course-box">
+                    <div class="pic">
+                        <img src="images/03-courses01.jpg" alt="코스사진1">
+                    </div>
+                    <p class="title">성인취미반</p>
+                </div>
+                <div class="course-box">
+                    <div class="pic">
+                        <img src="images/03-courses02.jpg" alt="코스사진2">
+                    </div>
+                    <p class="title">클래식</p>
+                </div>
+                <div class="course-box">
+                    <div class="pic">
+                        <img src="images/03-courses03.jpg" alt="코스사진3">
+                    </div>
+                    <p class="title">학생반</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="movie">
+        <h2>Watch our performance</h2>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/NhBUO43oUOA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- 수정 필요!! -->
+    </section>
+    <section id="apply">
+        APPLY NOW
+    </section>
 </body>
 </html>

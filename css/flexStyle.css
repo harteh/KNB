@@ -1,0 +1,220 @@
+@charset "utf-8";
+/* 폰트설정
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Pinyon Script', cursive;
+font-family: 'Abril Fatface', cursive;
+*/
+h2{
+    font-size: 58px;
+    font-family: 'Abril Fatface', cursive;
+}
+h3{
+    font-size: 32px;
+    font-family: 'Abril Fatface', cursive;
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: lighter;
+}
+p.pinyon{
+    font-family: 'Pinyon Script', cursive;
+}
+section{ 
+    width: 100%;
+    height: 1080px;
+    position: relative;
+}
+header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 99;
+}
+/* 메뉴, 로고, 연락처 */
+header .header-wrap{
+    width: 98%;
+    height: 56px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1%;    
+    font-size: 20px;
+}
+
+header .header-wrap .menu{
+    width: 120px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .header-wrap .menu #btn{
+    width: 50px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+#btn ul{
+    margin-top: 5px;
+}
+#btn ul li{
+    width: 80%;
+    height: 0.2rem;
+    background-color: #000;
+}
+#btn ul li:nth-child(2){ 
+    margin: 12px 0;
+    width: 100%;
+}
+header .header-wrap .logo{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 42px;
+    padding-left: 8%;
+}
+/* aside : 스크롤 유도 안내 */
+aside{
+    position: fixed;
+    font-size: 16px;
+    bottom: 150px;
+    left: -80px;
+    width: 240px;
+    height: 20px;
+    transform: rotate(-90deg);
+}
+aside span{
+    display: inline-block;
+}
+aside span:nth-child(1){    
+    width: 120px;
+    height: 2px;
+    margin-right: 20px;
+    background-color: #000;
+}
+/* 메인 섹션 영역 */
+#main{
+    background: url("../images/01-main01.jpg") no-repeat center/cover;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main .text-wrap{
+    width: 1085px;
+    height: 415px;
+    text-align: center;
+    color: #fff;
+}
+#main .text-wrap h1{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 192px;
+    margin: 50px auto;
+    letter-spacing: 5rem;
+}
+#main .text-wrap p:first-child{
+    font-size: 32px;
+    text-transform: uppercase;
+}
+#main .text-wrap p:last-child{
+    font-size: 100px;
+}
+/* 스쿨소개 섹션 영역 */
+#school .school-wrap{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 300px;
+}
+#school .school-wrap .pic-one .top{
+    width: 600px;
+    height: 400px;
+    margin-bottom: 100px;
+}
+#school .school-wrap .pic-one .bottom{
+    width: 400px;
+    height: 265px;
+}
+#school .school-wrap .text{
+    width: 580px;
+    margin-left: 100px;
+    margin-right: 140px;
+}
+#school .school-wrap .text h3{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+#school .school-wrap .text p{
+    font-size: 20px;
+    line-height: 50px;
+}
+#school .school-wrap .pic-two{
+    width: 280px;
+    height: 330px;
+    margin-top: 15%;
+}
+#school .school-wrap .pic-one .top img,
+#school .school-wrap .pic-one .bottom img,
+#school .school-wrap .pic-two img{
+    width: 100%;
+    height: 100%;
+}
+/* 코스 안내 섹션 영역 */
+#course .course-wrap{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 250px;
+}
+/* 왼쪽 코스설명 텍스트 영역 */
+#course .course-wrap .course-text-wrap{
+    width: 440px;
+    margin-right: 12.5%;
+    margin-left: 3%;
+}
+#course .course-wrap .course-text-wrap h3{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 32px;
+    padding-bottom: 90px;
+}
+#course .course-wrap .course-text-wrap .course-text-box p.title{
+    font-size: 32px;
+    padding-bottom: 80px;
+}
+#course .course-wrap .course-text-wrap .course-text-box p{
+    font-size: 20px;
+    line-height: 40px;
+}
+/* 오른쪽 코스설명 사진 영역 */
+#course .course-wrap .course-pic-wrap{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+#course .course-wrap .course-pic-wrap .course-box{
+    width: 360px;
+    height: 620px;
+    margin-right: 3.3%;
+}
+#course .course-wrap .course-pic-wrap .course-box:last-child{
+    margin-right: 0;
+}
+#course .course-wrap .course-pic-wrap .course-box .pic{
+    width: 100%;
+    height: 540px;
+    box-shadow: 10px 10px 10px #ccc;
+}
+#course .course-wrap .course-pic-wrap .course-box .pic img{
+    width: 100%;
+    height: 100%;
+}
+#course .course-wrap .course-pic-wrap .course-box p{
+    font-size: 24px;
+    padding-top: 45px;
+}
+/* 영상 섹션 영역  */
+#movie h2{
+    position: absolute;
+    top: 250px;
+    left: 9.5%;
+    width: 350px;
+    color: #fff;
+}

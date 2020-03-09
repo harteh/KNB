@@ -1,0 +1,85 @@
+@charset "utf-8";
+.clear{ clear: both;}
+.clear::after{ content:""; display:block; clear:both;}
+h1{ font-size: 192px; font-family: 'Abril Fatface', cursive;}
+/* 폰트설정
+font-family: 'Pinyon Script', cursive;
+font-family: 'Abril Fatface', cursive;
+font-family: 'Source Code Pro', monospace;
+*/
+body{
+    font-family: 'Source Code Pro', monospace;
+}
+section{ 
+    width: 100%;
+    height: 1080px;
+}
+header{
+    width: 100%;
+    height: 106px;
+    position: fixed;
+}
+/* 메뉴, 로고, 연락처 */
+header .header-wrap{
+    width: 100%;
+    height: 56px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+header .header-wrap .menu{
+    width: 190px;
+    height: 100%;
+    float: left;
+}
+header .header-wrap .menu #btn{
+    width: 50px;
+    height: 40px;
+    margin: 10px 60px auto 30px;
+    float: left;
+}
+#btn ul li{
+    width: 80%;
+    height: 2px;
+    background-color: #000;
+}
+#btn ul li:nth-child(2){
+    width: 100%;
+    margin: 12px 0;
+}
+header .header-wrap .menu p{
+    float: left;
+    font-size: 20px;
+    line-height: 40px;
+}
+header .header-wrap .logo{
+    float: left;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 42px;
+    margin-left: 37%;
+    margin-right: 24%;
+}
+header .header-wrap .contact{
+    float: left;
+    line-height: 40px;
+}
+header .header-wrap .contact .mail{
+    float: left;
+    margin-right: 50px;
+}
+header .header-wrap .contact .tel{
+    float: left;
+}
+/* 메인 섹션 영역 */
+#main{
+    background: url("../images/01-main01.jpg") no-repeat;
+}
+#main .text-wrap{
+    /* width: 56.5%; */
+    height: 414px;
+    padding-top: 300px;
+    text-align: center;
+    color: #fff;
+}
+#main .text-wrap h1{
+    letter-spacing: 3rem;
+}
