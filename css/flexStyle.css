@@ -4,14 +4,9 @@ font-family: 'Noto Sans KR', sans-serif;
 font-family: 'Pinyon Script', cursive;
 font-family: 'Abril Fatface', cursive;
 */
-h2{
-    font-size: 58px;
-    font-family: 'Abril Fatface', cursive;
-}
-h3{
-    font-size: 32px;
-    font-family: 'Abril Fatface', cursive;
-}
+h1{ font-size: 192px; font-family: 'Abril Fatface', cursive; }
+h2{ font-size: 58px; font-family: 'Abril Fatface', cursive;}
+h3{ font-size: 32px; font-family: 'Abril Fatface', cursive;}
 body{
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: lighter;
@@ -82,6 +77,7 @@ aside{
     width: 240px;
     height: 20px;
     transform: rotate(-90deg);
+    z-index: 98;
 }
 aside span{
     display: inline-block;
@@ -106,8 +102,6 @@ aside span:nth-child(1){
     color: #fff;
 }
 #main .text-wrap h1{
-    font-family: 'Abril Fatface', cursive;
-    font-size: 192px;
     margin: 50px auto;
     letter-spacing: 5rem;
 }
@@ -139,6 +133,7 @@ aside span:nth-child(1){
     margin-right: 140px;
 }
 #school .school-wrap .text h3{
+    font-family: 'Noto Sans KR', sans-serif;
     padding-top: 50px;
     padding-bottom: 100px;
 }
@@ -211,10 +206,40 @@ aside span:nth-child(1){
     padding-top: 45px;
 }
 /* 영상 섹션 영역  */
+#movie .covervid-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#movie .covervid-wrapper .covervid-video{
+    width: 100%;
+    height: auto;
+}
 #movie h2{
     position: absolute;
-    top: 250px;
-    left: 9.5%;
+    top: 40%;
+    left: 5%;
     width: 350px;
+    letter-spacing: 5px;
+    z-index: 90;
     color: #fff;
+}
+/* 수업신청 apply 섹션 영역 */
+#apply{
+    background: url("../images/05-bgi.jpg") bottom/cover no-repeat;
+}
+#apply .apply-wrap{
+    width: 530px;
+    height: 700px;
+    color: #fff;
+    position: absolute;
+    top: 255px;
+    left: 9.3%;
+}
+#apply .apply-wrap h1{
+    font-size: 80px;
+    letter-spacing: 8px;
 }
